@@ -1,0 +1,79 @@
+/* questions */
+.questions {
+  height: 80vh;
+  width: 80%;
+  margin: 10px auto;
+  position: relative;
+  top: 70vh;
+
+  padding: 20px 60px;
+  position: relative;
+}
+.questions .heading {
+  position: relative;
+  top: 15vh;
+  left: 10vh;
+}
+.questions .star_7 {
+  position: absolute;
+  top: 28vh;
+  right: 27vw;
+}
+/* questions_container */
+.f-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  top: 20vh;
+}
+.testimonial-box {
+  width: 45%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-box.orange {
+  background-color: #ff5555;
+  color: white;
+}
+
+.testimonial-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.testimonial-box p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:1500px) {
+  .questions{
+   top:47vh;
+  }
+  .f-container{
+    flex-direction: column;
+    width: 148vw;
+    gap: 3rem;
+    right: 31vw;
+  }
+  .questions{
+    margin-bottom:25vh;
+  }
+  
+}

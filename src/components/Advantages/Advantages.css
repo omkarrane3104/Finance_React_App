@@ -1,0 +1,140 @@
+.advantages {
+    height: 100vh;
+    width: 80%;
+    margin: 20px auto;
+  
+    position: relative;
+  }
+  .advantage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 70px;
+  }
+  
+  .a-left {
+    flex: 2;
+  }
+  .a-heading,
+  .text-container {
+    padding: 5px 40px;
+  }
+  .a-heading span {
+    color: #ff5555;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.16em;
+    text-align: left;
+  }
+  
+  .text-container p {
+    color: #0000008a;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+  }
+  .a-right {
+    flex: 1;
+    position: relative;
+  }
+  .a-right .a-img-2 {
+    position: absolute;
+    right: 15vh;
+    top: 37vh;
+    z-index: 6;
+  }
+  .a-right .a-img-1 {
+    z-index: 3;
+    position: relative;
+  }
+  .a-right .a-img-3 {
+    position: absolute;
+    right: 20vh;
+    bottom: 5vh;
+  }
+  .advantages .star-9 {
+    position: absolute;
+    right: -30px;
+    top: 20vh;
+  }
+  
+  .advantage-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 15vh;
+    right: 10vh;
+  }
+  .a-left-2 {
+    flex: 1;
+    position: relative;
+  }
+  .a-left-2 .a-img-4 {
+    position: relative;
+    z-index: 6;
+  }
+  .a-left-2 .a-img-5 {
+    position: absolute;
+    top: 26vh;
+    left: 31vh;
+    z-index: 10;
+  }
+  .a-left-2 .a-img-7 {
+    position: absolute;
+    top: 10vh;
+    left: 17vh;
+  }
+  .a-left-2 .star-10 {
+    position: absolute;
+    top: 5vh;
+    left: 80vh;
+  }
+  
+  .a-right-2 {
+    flex: 2;
+  }
+  .a-right-2 .text-container {
+    width: 40vw;
+  }
+
+  @media screen and (max-width:1400px){
+    .advantages{
+      bottom: 35vh;
+    }
+    .text-container{
+      margin: 15px 0;
+    }
+    .a-heading span{
+      margin:20px;
+     
+    
+    }
+   
+  }
+  
+  @media screen and (max-width:1200px){
+    .advantage, .advantage-2{
+      flex-direction: column;
+      margin:10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .advantage-2{
+      left:3vh;
+      margin-top: 20px;
+      
+    }
+   .a-right-2 .text-container{
+    width:80%;
+    text-align: center;
+    top:10vh;
+   }
+   .star-10,.star-9{
+    display: none;
+   }
+  }

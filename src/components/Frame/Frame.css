@@ -1,0 +1,56 @@
+.frame {
+  position: relative;
+  height: 50vh;
+  width: 80%;
+  margin: 10px auto;
+  top: 100vh;
+  padding: 30px 60px;
+  right: 10vw;
+  margin-bottom: 20px;
+}
+.frame .frame-img-1 {
+  width: 63vw;
+  height: 50vh;
+  position: relative;
+  left: 14vw;
+  z-index: 10;
+  cursor: pointer;
+}
+.frame .frame-img-2 {
+  position: absolute;
+  top: -15vh;
+  left: 0;
+}
+.frame .frame-star-1 {
+  position: absolute;
+  top: 20vh;
+  left: 10vh;
+}
+.frame .frame-star-2 {
+  position: absolute;
+  top: -10vh;
+  right: -15vw;
+}
+
+@media screen and (max-width:1500px) {
+  .frame{
+    margin-top: -27vh;
+     left: 0;
+    
+  }
+  
+}
+@media only screen and (max-width:1000px){
+ 
+  .frame-img-1{
+    height: 60vh;
+  }
+  .frame-img-2{
+    display: none;
+  }
+
+  .frame-img-2,.frame-star-2,.frame-star-1{
+    display: none;
+  }
+ 
+}

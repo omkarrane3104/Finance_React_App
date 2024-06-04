@@ -1,0 +1,171 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.hero-details {
+  margin: 10px 20px 10px 120px;
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 9;
+}
+
+.star-8 {
+  position: absolute;
+  left: 7vh;
+}
+
+/* left side of hero */
+.h-text {
+  flex: 1;
+  background-color: white;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+.h-text h1 {
+  font-weight: 900;
+  font-size: 55px;
+  color: black;
+  position: relative;
+  line-height: 64px;
+  z-index: 10;
+}
+
+.h-text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 30px;
+  z-index: 4;
+  position: relative;
+}
+
+.blur-img-1 {
+  position: absolute;
+  top: -81px;
+  left: 75px;
+  filter: blur(20px);
+}
+
+.h-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 2rem;
+}
+
+.h-buttons .h-btn-1 {
+  width: 180px;
+  height: 60px;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  font-size: 14px;
+  position: relative;
+  z-index: 7;
+}
+
+.h-buttons .h-btn-1:hover {
+  background-color: #333;
+}
+
+.h-buttons .watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all ease 0.4s;
+  position: relative;
+  z-index: 8;
+}
+
+.watch a:hover {
+  transform: scale(1.2);
+}
+
+.h-star-8 {
+  position: absolute;
+  top: 55vh;
+  left: 20vh;
+}
+
+/* right side of hero */
+.h-img {
+  flex: 1;
+  position: relative;
+}
+
+.h-img .h-img-1 {
+  position: relative;
+  z-index: 10;
+}
+
+.h-img-2 {
+  position: absolute;
+  z-index: 4;
+  right: -45px;
+  bottom: 13px;
+}
+
+.h-img .blur-img-2 {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+}
+
+
+
+@media only screen and (max-width:1500px){
+  .h-img{
+    display: none;
+  }
+  .h-text{
+    margin:40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-details {
+    margin: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .h-text {
+    margin-top: 0;
+  }
+
+  .h-text h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .h-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .h-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .h-img {
+    display: none;
+  }
+
+  .star-8,
+  .h-star-8 {
+    display: none;
+  }
+}

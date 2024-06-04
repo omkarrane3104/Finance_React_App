@@ -1,0 +1,46 @@
+a{
+  text-decoration: none;
+  color:black;
+}
+li{
+  list-style: none;
+}
+.overall{
+  position: relative;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ 
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  position: relative;
+  font-family: "Clash Display", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
